@@ -59,29 +59,53 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <title>Clínica</title>
     </head>
-    <body>
+    <body style="background:#D3D3D3">
 
-    <br/><br/>
+        <div class="container mt-5">
 
-    Página de login
+            <div class="row">
 
-    <br/><br/>
+                    <div class="col-md-3"></div><!--col-md-3-->
 
-    <form method="POST">
+                    <div class="col-md-6">
 
-        <label>E-mail:</label><br/>
-        <input type="email" name="email" /><br/><br/>
 
-        <label>Senha:</label><br/>
-        <input type="senha" name="senha" /><br/><br/>
 
-        <input type="submit" value="Entrar" />
+                        <h2 class="mt-5">Página de login</h2>
 
-    </form>    
+                        <form method="POST" class="mt-4">
 
-        
+                            <div class="mb-3">
+
+                                <label class="form-label">E-mail:</label>
+                                <input type="email" class="form-control" name="email" placeholder="Digite seu e-mail aqui" />
+
+                                <label class="form-label mt-3">Senha:</label>
+                                <input type="senha" class="form-control" name="senha" placeholder="Digite sua senha aqui"/>
+
+                                <div class="d-grid gap-2">
+
+                                    <button type="submit" class="btn btn-dark mt-4">Entrar</button>
+
+                                </div><!--d-grid gap-2-->
+
+                            </div><!--mt-3-->
+
+                        </form>    
+
+                    </div><!--col-md-6-->
+
+                    <div class="col-md-3"></div><!--col-md-3-->
+
+            </div><!--row--> 
+
+        </div><!--container-->
+
     </body>
     </html>
 
