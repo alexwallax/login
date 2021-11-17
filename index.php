@@ -5,7 +5,12 @@
 
     //$_SESSIOn variavel glogal que guarda os dados de sessão
     if(isset($_SESSION['id']) && empty($_SESSION['id']) == false) {
-        echo "Área restrita..."; //so vai entrar se estiver logado
+        
+
+        header("Location: page.php");
+        //header("Location: index.php");
+
+
     } else {
         header("Location: login.php"); //redirecionar para página de login.php
     }
